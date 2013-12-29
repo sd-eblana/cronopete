@@ -1,0 +1,16 @@
+[Desktop Entry]
+X-MultipleArgs=false
+Type=Application
+Name=Restore backup
+GenericName=Restore backed up files
+Comment=Allows to restore files from a backup
+Comment[es]=Permite restaurar ficheros a partir de una copia de seguridad
+Comment[gl]=Permite restaurar ficheiros a partires dunha copia de seguridade de Cronopete
+TryExec=cronopete_restore.sh
+Exec=cronopete_restore.sh
+Categories=FileTools;System;GTK;
+Icon=cronopete_restore.svg
+Name[es]=Restaurar copia de seguridad
+GenericName[es]=Restaurar ficheros de una copia de seguridad
+Name[gl]=Restaurar copia de seguridade
+GenericName[gl]=Restaurar ficheiros dunha copia de seguridade

@@ -1,0 +1,5 @@
+[cronopete.plug]
+exec=/@DBUS_PREFIX@/bin/cronopete_preferences
+icon=cronopete_preferences
+title=Backups
+category=system
