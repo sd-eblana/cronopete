@@ -1,0 +1,33 @@
+Cronopete is a backup utility for Linux, written by Sergio Costas and modeled after Apple's Time Machine software.
+
+## BUILDING CRONOPETE ##
+
+To build Cronopete, you need to install `CMAKE` and `Vala-0.16`
+
+Now, type
+```
+  mkdir BUILD
+  cd BUILD
+  cmake ..
+  make
+  sudo make install
+```
+This will compile Cronopete for GTK3, and with `AppIndicator` support.
+
+There are two modifiers for "`cmake`" that allows to change the compilation
+options:
+```
+  USE_GTK2 will compile for GTK2 instead of GTK3
+  NO_APPINDICATOR will compile cronopete without the libappindicator library
+```
+These modifiers must be prepended with `"-D"`, and appended with `"=on"`.
+To use these modifiers, first remove all the contents in the BUILD folder,
+and run again cmake. For example, this should compile cronopete for GTK2 and
+with libappindicator library:
+```
+  cd BUILD
+  rm -rf *
+  cmake .. -DUSE_GTK2=on
+  make
+  sudo make install
+```
